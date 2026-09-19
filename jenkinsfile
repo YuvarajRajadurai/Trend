@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "DOCKERHUB_USERNAME/trend-app"
+        DOCKER_IMAGE = "yuvarajjr/trend-app"
         AWS_REGION = "ap-south-1"
         EKS_CLUSTER = "trend-cluster"
     }
@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Vennilavanguvi/Trend.git'
+                git branch: 'main', url: 'https://github.com/YuvarajRajadurai/Trend.git'
             }
         }
 
