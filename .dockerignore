@@ -1,0 +1,8 @@
+.git
+.gitignore
+README.md
+terraform
+k8s
+Jenkinsfile
+*.log
+node_modules
